@@ -12,6 +12,11 @@ generator client {
   provider = "prisma-client-js"
 }
 
+// when adding this need to run: npx prisma generate
+generator typegraphql {
+  provider = "typegraphql-prisma"
+}
+
 model Post {
   id        Int     @id @default(autoincrement())
   title     String
